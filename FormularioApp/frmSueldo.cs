@@ -37,9 +37,7 @@ namespace FormularioApp
                 return;
             }
             
-
             //no usar try .. catch
-
 
             //sumar los ingresos
             // horasTrab = double.Parse( this.txtHorasTrab.Text);
