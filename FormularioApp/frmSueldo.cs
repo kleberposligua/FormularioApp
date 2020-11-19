@@ -29,11 +29,20 @@ namespace FormularioApp
             //tarea:
             //1. validar el ingreso de todos los cuadros de textos
             //2. validar que el dato ingresado sea numérico
+
+            if (!Double.TryParse(txtHorasTrab.Text, out double horasTrab))
+            {
+                MessageBox.Show("Por favor ingresa solo valores numéricos...");
+                this.txtHorasTrab.Focus();
+                return;
+            }
+            
+
             //no usar try .. catch
 
 
             //sumar los ingresos
-            double horasTrab = double.Parse( this.txtHorasTrab.Text);
+            // horasTrab = double.Parse( this.txtHorasTrab.Text);
             double valorHora = double.Parse(this.txtValorHora.Text);
             double bono = double.Parse(this.txtBono.Text);
             double totIng = horasTrab * valorHora + bono;
