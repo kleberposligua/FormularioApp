@@ -19,20 +19,7 @@ namespace FormularioApp
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            //todo: validar que sean valores numéricos
-
-            //validar que esté en el rango de 0 a 255
-            int num = Int32.Parse( this.txtNumero.Text);
-
-            if(!(num>=0 && num <= 255))
-            {
-                MessageBox.Show("Tu número debe estar en el rango 0..255");
-                this.txtNumero.Focus();
-                return;
-            }
-
-            encerar();
-            numeroaBinario(num);
+            
 
         }//fin botón calcular
 
@@ -77,7 +64,23 @@ namespace FormularioApp
                 num = num / 2;
             } //fin de bucle while
         }
-    
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //todo: validar que sean valores numéricos
+
+            //validar que esté en el rango de 0 a 255
+            int num = Int32.Parse(this.txtNumero.Text);
+
+            if (!(num >= 0 && num <= 255))
+            {
+                MessageBox.Show("Tu número debe estar en el rango 0..255");
+                this.txtNumero.Focus();
+                return;
+            }
+
+            encerar();
+            numeroaBinario(num);
+        }
     } //fin de clase
 } //fin de namespace

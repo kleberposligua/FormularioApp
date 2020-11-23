@@ -40,6 +40,11 @@
             this.chk7 = new System.Windows.Forms.CheckBox();
             this.chk8 = new System.Windows.Forms.CheckBox();
             this.btnCalcular = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,7 +53,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(51, 52);
+            this.label1.Location = new System.Drawing.Point(51, 48);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(287, 25);
             this.label1.TabIndex = 0;
@@ -56,7 +61,7 @@
             // 
             // txtNumero
             // 
-            this.txtNumero.Location = new System.Drawing.Point(371, 53);
+            this.txtNumero.Location = new System.Drawing.Point(371, 49);
             this.txtNumero.MaxLength = 3;
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(161, 26);
@@ -153,7 +158,7 @@
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Location = new System.Drawing.Point(371, 85);
+            this.btnCalcular.Location = new System.Drawing.Point(557, 152);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(161, 36);
             this.btnCalcular.TabIndex = 3;
@@ -161,11 +166,60 @@
             this.btnCalcular.UseVisualStyleBackColor = true;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(557, 203);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(161, 37);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(316, 325);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 26);
+            this.dateTimePicker1.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(41, 325);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(228, 20);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Ingresa tu fecha de nacimiento";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(179, 377);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(149, 20);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Tu edad en años es";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(181, 421);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(147, 20);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Tu edad en dias es ";
+            // 
             // frmNumEnBinario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtNumero);
@@ -193,5 +247,10 @@
         private System.Windows.Forms.CheckBox chk2;
         private System.Windows.Forms.CheckBox chk1;
         private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
